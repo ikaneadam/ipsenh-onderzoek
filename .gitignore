@@ -1,0 +1,3 @@
+# Project exclude paths
+/experiment/functions/node/node_modules/
+/experiment/node_modules/

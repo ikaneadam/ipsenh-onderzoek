@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  serverless-api:
+    container_name: serverless-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      PAYLOAD: '{"test": "request"}'

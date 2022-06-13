@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  serverless-function-node:
+    container_name: serverless-function-node
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      PAYLOAD: '{"test": "request"}'

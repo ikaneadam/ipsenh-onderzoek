@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  serverless-function-python:
+    container_name: serverless-function-python
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      PAYLOAD: '{"test": "request"}'

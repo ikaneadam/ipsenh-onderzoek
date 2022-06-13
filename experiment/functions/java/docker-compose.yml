@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  serverless-function-java:
+    container_name: serverless-function-java
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      PAYLOAD: '{"test": "request"}'
